@@ -3,6 +3,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int convert(string input);
 
@@ -12,6 +13,7 @@ int main(void)
 
     for (int i = 0, n = strlen(input); i < n; i++)
     {
+        //check if the user input is a digit or not, if not print invalid input
         if (!isdigit(input[i]))
         {
             printf("Invalid Input!\n");
@@ -25,6 +27,6 @@ int main(void)
 
 int convert(string input)
 {
-    //Convert string to int
-    
+    //Convert string to int;
+    return atoi(input);
 }
